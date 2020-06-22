@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IT cабактар</title>
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+       * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #333;
+        overflow-x: hidden;
+    }
+    
+    .v-header {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        color: #fff;
+    }
+    
+    .containerv {
+        max-width: 960px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin: auto;
+        text-align: center;
+    }
+    
+    .fullscreen-video-wrap {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+    
+    .fullscreen-video-wrap video {
+        min-width: 100%;
+        min-height: 100%;
+    }
+    
+    .header-overlay {
+        height: 100.3vh;
+        width: 98.8vw;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #225470;
+        z-index: 1;
+        opacity: 0.55;
+    }
+    
+ 
+    @media(max-width:960px) {
+        .container {
+            padding-right: 3rem;
+            padding-left: 3rem;
+        }
+    }
+       
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            font-size: 16px;
+            font-family: "Lato", sans-serif;
+            font-weight: 400;
+            line-height: 1.8em;
+            color: #666;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: none;
+        }
+        
+        li {
+            list-style: none;
+        }
+        
+        p {
+            font-size: 0.9rem;
+            line-height: 1.6;
+            font-weight: 400;
+            color: #606060;
+        }
+        
+        .extra-div h2,
+        .servicediv h2 {
+            font-size: 0.9rem;
+            margin: 2px 0 1px 0;
+            line-height: 1.1;
+            word-spacing: 4px;
+        }
+        .header
+       {
+            position: relative;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .header:before {
+            content: "";
+            position: absolute;
+            top: 0%;
+            bottom: 0%;
+            left: 0;
+            right: 0;
+            opacity: .3;
+            z-index: -1;
+            background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);
+        }
+        
+        .navbar:before {
+            content: "";
+            position: absolute;
+            top: 0%;
+            bottom: 0%;
+            left: 0;
+            right: 0;
+            opacity: .3;
+            z-index: -1;
+            background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);
+        }
+        
+        .nav-item a {
+            color: #fff!important;
+            font-weight: bold;
+        }
+      
+        .pimg2,
+        .pimg3,
+        .pimg4 {
+            background-image: linear-gradient(rgba(0, 195, 255, 0.966), rgba(0, 168, 255, 0.3));
+            position: relative;
+            opacity: 0.80;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        
+        .pimg1 {
+            background:linear-gradient(rgba(0, 168, 255, 0.3), rgba(0, 168, 255, 0.3));
+            clip-path: polygon(100% 0%, 100% 75%, 50% 100%, 0 75%, 0 0);
+
+            min-height: 100%;
+        }
+        
+        .pimg2 {
+            background-image: url('../video/images/1.jpg');
+            min-height: 400px;
+        }
+        
+        .pimg3 {
+            background-image: url('../video/images/3.jpeg');
+            min-height: 400px;
+        }
+        
+        .pimg4 {
+            background-image: url('../video/images/10.jpg');
+            min-height: 400px;
+        }
+        
+        .section {
+            text-align: center;
+            padding: 50px 80px;
+        }
+        
+        .section-light {
+            background-color: #f4f4f4;
+            color: #666;
+        }
+        
+        .section-dark {
+            background-color: #282e34;
+            color: #ddd;
+        }
+        
+        .section-blue {
+            background-color: #16c9f6;
+            color: #ddd;
+        }
+        
+        .ptext {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            color: #000;
+            font-size: 27px;
+            letter-spacing: 8px;
+            text-transform: uppercase;
+        }
+        
+        .ptext .border {
+            background-color: #111;
+            color: #fff;
+            padding: 20px;
+        }
+        
+        .ptext .border.trans {
+            background-color: transparent;
+        }
+        /*@media(max-width:568px) {
+          .pimg1,
+          .pimg2,
+          .pimg3,
+          .pimg4 {
+              background-attachment: scroll;
+          }
+      
+      
+      }*/
+        
+        @import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+
+
+        body {
+            margin: 0;
+            padding: 0;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #060c21;
+            font-family: 'Poppins', sans-serif;
+        }
+        .containerr {
+            margin: 0 20px;
+            padding: 0 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .container {
+         
+            position: relative;
+            width: 90%;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
+            grid-template-rows: auto;
+            grid-gap: 0 40px;
+        }
+        
+        .container .box {
+            position: relative;
+            height: 400px;
+            background: #060c21;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #000;
+        }
+        
+        .container .box:before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: #fff;
+            transform: skew(2deg, 2deg);
+            z-index: -1;
+        }
+        
+        .container .box:nth-child(1):before {
+            background: linear-gradient(315deg, #ff0057, #e64a19);
+        }
+        
+        .container .box:nth-child(2):before {
+            background: linear-gradient(315deg, #89ff00, #00bcd4);
+        }
+        
+        .container .box:nth-child(3):before {
+            background: linear-gradient(315deg, #e91e63, #5d02ff);
+        }
+        
+        .container .box:nth-child(4):before {
+            background: linear-gradient(315deg, #ff0000, #ffc107);
+        }
+        
+        .container .box:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.05);
+            pointer-events: none;
+        }
+        
+        .content {
+            position: relative;
+            padding: 20px;
+            transform: translateY(40px);
+        }
+        
+        .box .content h2 {
+            position: absolute;
+            top: -40px;
+            right: 20px;
+            padding: 0;
+            margin: 0;
+            font-size: 10em;
+            color: rgba(255, 255, 255, .05);
+            transition: 0.5s;
+        }
+        
+        .box:hover .content h2 {
+            top: -85px
+        }
+        
+        .box .content h3 {
+            margin: 0 0 10px;
+            padding: 0;
+            font-size: 24px;
+            font-weight: 500;
+            color: #fff;
+        }
+        
+        .box .content p {
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            font-size: 16px;
+        }
+        
+        .box .content a {
+            position: relative;
+            margin: 20px 0 0;
+            padding: 10px 20px;
+            text-decoration: none;
+            border: 1px solid #fff;
+            display: inline-block;
+            color: #fff;
+            transition: 0.5s;
+            transform: translateY(-40px);
+            opacity: 0;
+            visibility: hidden;
+        }
+        
+        .box:hover .content a {
+            transform: translateY(0);
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .box .content a:hover {
+            color: #000;
+            background: #fff;
+        }
+    </style>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    
+</head>
+
+<body>
+    <div class="header" id="topheader">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container text-uppercase p-2">
+
+                <a class="navbar-brand font-weight-bold text-white " href="# ">КЕЛЕЧЕК</a>
+                <button class="navbar-toggler " type="button " data-toggle="collapse " data-target="#navbarSupportedContent " aria-controls="navbarSupportedContent " aria-expanded="false " aria-label="Toggle navigation ">
+              <span class="navbar-toggler-icon "></span>
+            </button>
+
+                <div class="collapse navbar-collapse " id="navbarSupportedContent ">
+
+                    <ul class="navbar-nav ml-auto text-uppercase ">
+                        <li class="nav-item active ">
+                            <a class="nav-link " target="_blank" href="index.html ">Башкы бет</a>
+                        </li>
+
+                        <li class="nav-item ">
+                            <a class="nav-link " href="file:///C:/JS/kelechekop/index.html#servicediv">Жыйынтык</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="file:///C:/JS/kelechekop/index.html#pricingdiv">ƟНƟКТƟШТƟР</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="file:///C:/JS/kelechekop/index.html#happydiv">Менторлор</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link "  href="file:///C:/JS/kelechekop/lesson.html">IT cабактар</a>
+
+
+                        </li>
+                    </li> <li class="nav-item ">
+                        <a class="nav-link " target="_blank" href="file:///C:/JS/kelechekop/time.html">РЕЖИМ</a>
+
+
+                    </li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </nav>
+    </div>
+
+   <!-- >
+        <div class="ptext">
+            <span class="border ">
+              IT cабактар
+            </span>
+        </div>
+    -->
+    <div class="pimg1"
+    <header class="v-header containerv">
+        <div class="fullscreen-video-wrap">
+            <video  src="cod.mp4" autoplay muted loop"></video>
+        </div>
+        <div class="header-overlay">
+            <div class="ptext">
+                <span class="border ">
+                  IT cабактар
+                </span>
+            </div>
+        </div>
+    </div>
+    </header>
+    <section class="containerr">
+
+
+        <div class="container ">
+
+            <div class="box ">
+                <div class="content ">
+                    <h2>01</h2>
+                    <h3>Алгоритм</h3>
+                    <p>Алгоритм - бул буйруктардын ырааттуулук менен ал тапшырманы чечилиши
+
+                    </p>
+                    <a href="#">Толугу менен</a>
+
+                </div>
+            </div>
+            <div class="box ">
+                <div class="content ">
+                    <h2>02</h2>
+                    <h3>HTML</h3>
+                    <p> HTML - бул веб-баракчаларды же веб-тиркемелерди түзүү үчүн белгилөө тили
+
+                    </p>
+                    <a href="#">Толугу менен</a>
+                </div>
+            </div>
+            <div class="box ">
+                <div class="content ">
+                    <h2>03</h2>
+                    <h3>CSS</h3>
+                    <p> CSS - жазылган документтин көрүнүшүн коздоого арналган тил
+
+                    </p>
+                    <a href="#">Толугу менен</a>
+
+                </div>
+            </div>
+            <div class="box ">
+                <div class="content ">
+                    <h2>04</h2>
+                    <h3>JAVASCRIPT</h3>
+                    <p>
+                        JavaScript - объектиге багытталып, көп парадигмалык программалоо тили
+
+                    </p>
+                    <a href="#">Толугу менен</a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="pimg2">
+        <div class=" ptext ">
+            <span class="border trans ">
+          Website жасоо
+          </span>
+        </div>
+    </div>
+    <section class="section section-dark ">
+        <h2>Дизайн иштеп чыгуу</h2>
+        <p>
+
+
+            Веб-дизайнерлер веб-барактардын шаблондорунун схемаларын иштеп чыгышат. Дизайнер акыркы керектөөчүнүн сайттын маалыматына жана кызматтарына кантип жете тургандыгын аныктайт, башкача айтканда, ал колдонуучу интерфейсинин иштелип чыгышына түздөн-түз катышат.
+            Көпчүлүк учурларда, беттер графикалык элементтерди камтыйт. Алар сүрөтчүлөр, иллюстраторлор, фотографтар, техникалык дизайнерлер, типографтар жана башкалар тарабынан даярдалган. Даяр шаблондор кардарга көрсөтүлөт.
+        </p>
+    </section>
+
+    <div class="pimg3 ">
+        <div class=" ptext ">
+            <span class="border trans ">
+        Website 2-этабы
+      </span>
+        </div>
+    </div>
+    <section class="section section-blue">
+        <h2>Вёрстка</h2>
+        <p>
+
+            Дизайнер шаблондордун макеттерин жөнөкөй сүрөттөр түрүндө (мисалы, JPEG же PNG форматында) же катмарлуу (мисалы, PSD же AI форматында) алат. Анын милдети - бул графикалык макеттерден Интернетке даярдалган сүрөттөр менен гипертексттик веб-баракчаларды
+            алуу. Жайгашуу ишиндеги татаал учурлардын бири - көптөгөн браузерлердин шайкештигин камсыз кылуу - веб-баракчаларды көрүүгө арналган программалар (кайчылаш браузер). Браузерлер бир эле белгилөө элементтерин же CSS эрежелерин өз-өзүнчө чечмелеши
+            мүмкүн, натыйжада айрым колдонуучулар мазмунун дизайнердин ою боюнча жана кардар көрө элек деп көрбөй калышы мүмкүн.
+        </p>
+    </section>
+    <div class="pimg4 ">
+        <div class="ptext ">
+            <span class="border  ">
+            Website 3-этабы
+          </span>
+        </div>
+    </div>
+    <section class="section section-light">
+        <h2>Программалоо </h2>
+        <p>
+
+            Программисттер даяр баракчанын шаблондорун жана дизайнерлерден сайт элементтерин кантип иштөө жана уюштуруу боюнча көрсөтмөлөрдү алышат. Программист сайттын программалык негизин түзүп, аны нөлдөн баштап, алкак же CMS колдонот. Бул учурда программалоо
+            тилин тандоо - принцип маселеси.
+        </p>
+    </section>
+</body>
+
+</html>
+

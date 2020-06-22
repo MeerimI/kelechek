@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Режим</title>
+    <link rel="stylesheet" href="style.css">
+
+   
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        body {
+            height: 200vh;
+            background: #fff;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: none;
+        }
+        
+        li {
+            list-style: none;
+        }
+        
+        p {
+          padding: 5px;
+            font-size: 1.8rem;
+            line-height: 1.6;
+            font-weight: 400;
+            color: #606060;
+        }
+        
+        .extra-div h2,
+        .servicediv h2 {
+            font-size:2rem;
+            margin: 2px 0 1px 0;
+            line-height: 1.1;
+            word-spacing: 4px;
+        }
+        
+        .header {
+            position: relative;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        
+        .header:before {
+            content: "";
+            position: absolute;
+            top: 0%;
+            bottom: 0%;
+            left: 0;
+            right: 0;
+            opacity: .3;
+            z-index: -1;
+            background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);
+        }
+        
+        .navbar:before {
+            content: "";
+            position: absolute;
+            top: 0%;
+            bottom: 0%;
+            left: 0;
+            right: 0;
+            opacity: .3;
+            z-index: -1;
+            background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);
+        }
+        
+        .nav-item a {
+            color: #fff!important;
+            font-weight: bold;
+        }
+        
+        section {
+            position: absolute;
+            width: 100%;
+            height: calc(100% - 200px);
+            background: #2abbff;
+        }
+        
+        section .curve {
+            position: absolute;
+            bottom: -200px;
+            height: 200px;
+            width: 100%;
+            transform-origin: top;
+        }
+        
+        section .curve img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .banner-area h2 {
+            position: absolute;
+            top: -15%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            font-family: Poppins;
+            color: #fff;
+            font-size: 5.5em;
+        }
+        
+        .banner-area h2 span {
+            color: rgba(255, 255, 255, 0.788);
+        }
+        
+        .header-extradiv {
+            font-size: 25px;
+            width: 100%;
+            height: auto;
+            padding: 0 0 700px 0;
+            margin: 660px 0 0 0;
+            padding: 0;
+            text-align: center;
+            background: #fff;
+        }
+        
+        .extra-div {
+            background: #fff;
+            border: medium none;
+            padding: 50px!important;
+            border-radius: 3px;
+            transition: 0.3s;
+        }
+        
+        .extra-div:hover {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            transform: translateY(-20px);
+        }
+        
+        .header-extradiv h1 {
+            padding: 0 0 20px 0;
+            margin: 2px 0 4px 0;
+        }
+        
+        .extra-div h2 {
+          padding: 5px ;
+            font-size: 2.5rem;
+            margin: 2px 0 4px 0;
+            line-height: 1.1;
+            word-spacing: 4px;
+        }
+        
+        i {
+            color: #2fccd0;
+        }
+     
+        .waveO {
+      width: 100%;
+      height: 100vh;
+            margin: 1250px 0 0 0 ;
+      background: #16c9f6;
+  }
+  
+  .waveO .wave {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      background: url('images/wave.png');
+      background-size: 1000px 100px;
+  }
+   .wave.wave1 {
+      animation: animate 30s linear infinite;
+      z-index: 1000;
+      opacity: 1;
+      animation-delay: 0s;
+      bottom: 0;
+  }
+   .wave.wave2 {
+      animation: animate2 15s linear infinite;
+      z-index: 999;
+      opacity: 0.5;
+      animation-delay: -5s;
+      bottom: 10px;
+  }
+   .wave.wave3 {
+      animation: animate 30s linear infinite;
+      z-index: 998;
+      opacity: 0.2;
+      animation-delay: -2s;
+      bottom: 15px;
+  }
+   .wave.wave4 {
+      animation: animate2 5s linear infinite;
+      z-index: 997;
+      opacity: 0.7;
+      animation-delay: -2s;
+      bottom: 20px;
+  }
+  
+  @keyframes animate {
+      0% {
+          background-position-x: 0;
+      }
+      100% {
+          background-position-x: 1000px;
+      }
+  }
+  
+  @keyframes animate2 {
+      0% {
+          background-position-x: 0;
+      }
+      100% {
+          background-position-x: -1000px;
+      }
+  }
+
+  a:hover {
+            text-decoration: none;
+        }
+        
+
+
+  .main-timeline{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.main-timeline:after{
+content: '';
+display: block;
+clear: both;
+}
+
+.containerx{
+  margin: 65px 120px;
+  padding: 100px 0;
+}
+.main-timeline .timeline{
+  margin: -80px -15px ;
+}
+.main-timeline .timeline-year{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 599px;
+  padding: 0 0 15px;
+  margin: 0 0 59px;
+  border-bottom: 2px solid #555;
+  position: relative;
+  z-index: 1;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.main-timeline .timeline-year:before,
+.main-timeline .timeline-year:after  {
+content: '';
+background: radial-gradient(#fff, #ea2027, #ea2027);
+height: 20px;
+width: 20px;
+transform:translateX(-50%);
+position: absolute;
+left: 50%;
+bottom: -10px;
+
+}
+
+.main-timeline .timeline-year:after  {
+background: #555;
+height: 55px;
+width: 3px;
+border-radius: 0;
+bottom: -55px;
+z-index: -1;
+}
+
+.main-timeline .inner-content{
+background-color: #fff7e2;
+padding: 20px 10px 10px;
+margin: 0 10px;
+box-shadow: 0 0 5px #444;
+position: relative;
+}
+
+.main-timeline .inner-content:before,
+  .main-timeline .inner-content:after{
+content: '';
+background: rgba(0, 0, 0, 0.2);
+height: 40px;
+width: 25px;
+transform: translateX(-50%);
+position: absolute;
+left: 50%;
+top: -25px;
+  }
+
+
+  .main-timeline .inner-content:after{
+  background-color: #555;
+  height: 15px;
+  border-radius: 50%;
+  top: -20px;
+  }
+.main-timeline .timeline-icon{
+  text-align: center;
+
+  font-size: 50px;
+  transform:all 0.3s;
+}
+.main-timeline .timeline:hover .timeline-icon{
+transform: rotateY(360deg);
+
+}
+
+.main-timeline .title{
+  text-align: center;
+
+  font-size: 25px;
+  font-weight: 600;
+  margin: 0 0 15px 0;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.main-timeline .description ul{
+color: #333;
+font-size: 15px;
+letter-spacing: 1px;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.description ul{
+font-size: 15px;
+
+}
+.main-timeline .timeline.blue .timeline-content{
+  color: #1b1464;
+}
+
+.main-timeline .timeline.blue .timeline-year:before{
+  background: radial-gradient(#fff, #1b1464, #1b1464);
+}
+
+.main-timeline .timeline.orange .timeline-content{
+  color: #ee5a24;
+}
+.main-timeline .timeline.orange .timeline-year:before{
+background: radial-gradient(#fff, #ee5a24,#ee5a24);
+}
+
+.main-timeline .timeline.green .timeline-content{
+  color: green;
+}
+.main-timeline .timeline.green .timeline-year:before{
+background: radial-gradient(#fff, #009432,#009432);
+}
+
+a:hover{
+  text-decoration: none;
+}
+ 
+ 
+    </style>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="header" id="topheader">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container text-uppercase p-2">
+
+                <a class="navbar-brand font-weight-bold text-white " href="# "><font size="5">
+                    КЕЛЕЧЕК
+                </font></a>
+                <button class="navbar-toggler " type="button " data-toggle="collapse " data-target="#navbarSupportedContent " aria-controls="navbarSupportedContent " aria-expanded="false " aria-label="Toggle navigation ">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+
+                <div class="collapse navbar-collapse " id="navbarSupportedContent ">
+
+                    <ul class="navbar-nav ml-auto text-uppercase ">
+                        <li class="nav-item active ">
+                            <a class="nav-link " target="_blank" href="file:///C:/JS/kelechekop/index.html# "><font size="4">
+                                Башкы бет
+                            </font></a>
+                        </li>
+
+                        <li class="nav-item ">
+                            <a class="nav-link " href="file:///C:/JS/kelechekop/index.html#servicediv"> <font size="4">
+                                Жыйынтык
+                            </font></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="file:///C:/JS/kelechekop/index.html#pricingdiv"><font size="4">
+                                ƟНƟКТƟШТƟР
+                            </font></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="file:///C:/JS/kelechekop/index.html#happydiv"><font size="4">
+                                Менторлор
+                            </font></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " target="_blank" href="file:///C:/JS/kelechekop/lesson.html "><font size="4">
+                                IT cабактар
+                            </font></a>
+
+
+                        </li>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="file:///C:/JS/kelechekop/time.html"><font size="4">
+                                РЕЖИМ
+                            </font></a>
+
+
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </nav>
+    </div>
+
+    <section id="particles-js">
+        <span class="curve">
+   <img src="images/curve.png" >
+   <div class="banner-area">
+    <h2><span class="type"></span></h2>
+        </div>
+        <script src="typed.js"></script>
+        <script>
+            var typed = new Typed('.type', {
+                strings: [
+
+                    'Код жазганды үйрөн ',
+                    'Так бол'
+                ],
+                typeSpeed: 130,
+                backSpeed: 50,
+                loop: true
+
+            });
+        </script>
+        </span>
+    </section>
+    <section class="header-extradiv">
+        <h1> САБАКТАРДЫН ЖАДЫБАЛЫ</h1>
+        <div class="container">
+            <div class="row">
+                <div class=" extra-div col-lg-4 col-md-4 col-12">
+                    <a href="#"><i class="fa-3x fa fa-desktop" aria-hidden="true"></i></a>
+                    <h2> <b>HTML, CSS, JS </b>
+
+                    </h2><br>
+                    <p> Шаршемби & Ишемби <br> Башталуу сааты: 18:00 <br> <br> Мугалим: Абдрахман уулу Эркебек
+                    </p>
+                </div>
+                <div class=" extra-div col-lg-4 col-md-4 col-12">
+
+                    <a href="#"><i class="fa-3x fa fa-laptop" aria-hidden="true"></i></a>
+                    <h2> <b>ПРАКТИКА & АЛГОРИТМ </b>
+
+                    </h2><br>
+                    <p> Дүйшөмбү & Жума <br> Башталуу сааты: 18:00 & 22:30  <br> <br> Мугалим: Уржанов Мирлан
+                    </p>
+                </div>
+                <div class=" extra-div col-lg-4 col-md-4 col-12">
+
+                    <a href="#"><i class="fa-3x  fa fa-language" aria-hidden="true"></i></a>
+
+                    <h2> <b>АНГЛИС ТИЛИ </b>
+
+                    </h2><br>
+                    <p> Шейшемби & Бейшемби <br> Башталуу сааты: 18:00   <br> <br> Мугалим: Бактыбекова Асылзат
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="waveO ">
+        <div class="containerx">
+            <div class="row">
+              <br><br><br><br><br>
+              <div class="col-md-12">
+                <div class="main-timeline">
+                  <div class="col-md-3 col-sm-4">
+                    <div class="timeline">
+                      <a href="" class="timeline-content">
+                        <div class="timeline-year">
+        <span>МАЙ</span>
+                        </div>
+                        <div class="inner-content">
+                        <div class="timeline-icon">
+        <i class="fa fa-code "></i>
+        </div>
+        <h3 class="title">Алгоритм</h3>
+        <div class="description"><ul>
+            <li>Компьютерге киришүү</li>
+            <li>Программалоого киришүү</li>
+            <li>Алгоритм деген эмне?</li>
+            <li>Псевдокод деген эмне?</li>
+            <li>Flowchart деген эмне?</li>
+            </ul>
+        </div>
+                   </div>
+                      </a>
+                    </div>
+                  </div>
+        
+                  <div class="col-md-3 col-sm-4">
+                    <div class="timeline blue">
+                      <a href="" class="timeline-content">
+                        <div class="timeline-year">
+        <span>ИЮНЬ</span>
+                        </div>
+                        <div class="inner-content">
+                        <div class="timeline-icon">
+        <i class="fa fa-desktop "></i>
+        </div>
+        <h3 class="title">JavaScript</h3>
+        <div class="description"> <ul>
+            <li>JavaScriptке киришүү</li>
+            <li>Ɵзгөрүлмө деген эмне?</li>
+            <li>Берилгендердин типтери деген эмне?</li>
+            <li>Массив деген эмне?</li>
+            <li>Шарт(for, while) деген эмне?</li>
+            <li>Цикл деген эмне?</li>
+            </ul></div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+        
+                  <div class="col-md-3 col-sm-4">
+                    <div class="timeline orange">
+                      <a href="" class="timeline-content">
+                        <div class="timeline-year">
+        <span>ИЮЛЬ</span>
+                        </div>
+                        <div class="inner-content">
+                        <div class="timeline-icon">
+        <i class="fa fa-file-code-o  "></i>
+        </div>
+        <h3 class="title">HTML</h3>
+        <div class="description"><ul>
+            <li>HTMLге киришүү</li>
+            <li>HTMLдеги элементтер</li>
+            <li>Элементтин атрибуттары</li>
+            <li>Форма менен иштөө</li>
+            <li>Сүрөттөр менен иштөө</li>
+            <li>Валидация деген эмне?</li>
+            </ul></div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+        
+                  <div class="col-md-3 col-sm-4">
+                    <div class="timeline green">
+                      <a href="" class="timeline-content ">
+                        <div class="timeline-year">
+        <span>АВГУСТ</span>
+                        </div>
+                        <div class="inner-content">
+                        <div class="timeline-icon">
+        <i class="fa fa-css3"></i>
+        </div>
+        <h3 class="title">CSS</h3>
+        <div class="description"><ul>
+            <li>CSSке киришүү</li>
+            <li>Элементтин атрибуттары</li>
+            <li>Текст менен иштөө</li>
+            <li>Фон менен иштөө</li>
+            <li>Түстөр менен иштөө</li>
+            <li>Анимация менен иштөө</li>
+            </ul></div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="wave wave1 "></div>
+        <div class="wave wave2 "></div>
+        <div class="wave wave3 "></div>
+        <div class="wave wave4 "></div>
+
+    </section>
+    <script type=" text/javascript " src="particles.js "></script>
+    <script type="text/javascript " src="app.js "></script>
+
+    <script type="text/javascript">
+        var scroll = document.querySelector('.curve');
+        window.addEventListener('scroll', function() {
+            var value = 1 + window.scrollY / -380;
+            scroll.style.transform = `scaleY(${value})`;
+
+        })
+    </script>
+</body>
+
+</html>
